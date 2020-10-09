@@ -35,7 +35,8 @@ function App() {
 
 ## Criteria for ReactLoader
 
-ReactLoader applies loading animation to each of its immediate children. In case the immediate children has it's own children or text content, Reactloader does not get applied.
+ReactLoader applies loading animation to each of its immediate children. 
+In case the immediate children has it's own children or text content, ReactLoader does not get applied. The element should be empty for ReactLoader to kick-in.
 
 ## Props
 
