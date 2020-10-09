@@ -3,7 +3,9 @@
 
 name: Publish ReactAnimateLoader
 
-on: [workflow_dispatch]
+on:
+  release:
+    types: [created]
 
 jobs:
   build:
