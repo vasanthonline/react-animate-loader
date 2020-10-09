@@ -43,6 +43,12 @@ function App() {
 7. Additional customizations in terms of element background color, minimum height etc can be set via the `style` props of `ReactAnimateLoader` element.
 8. Additioncal customizations on animation color, animation duration etc can be set via CSS styling for the selector `.react___block__loader:empty:after`.
 
+## Why CSS  `:after` pseudo approach?
+The alternate to adding a pseudo element is to step into the internals of the HTML / React element and add a child which does the animation. This would mean that the library is manipulating the DOM of the element without knowing anything about the element. This might cause unintended consequences to the element resulting in override of the element behaviour.
+
+To avoid such issues, the library uses CSS only approach to append a pseudo element and run the animation in the pseudo element. This way, the library is unaware of the internals of the HTML / React element and prove to be a generic module.
+
+
 
 ## Criteria for ReactAnimateLoader
 
