@@ -1,7 +1,6 @@
 {
   "name": "react-loader",
   "version": "0.1.0",
-  "private": true,
   "description": "An animated sleek loader for react components",
   "keywords": [
     "loader",
