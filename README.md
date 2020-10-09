@@ -57,11 +57,19 @@ In case the immediate children has it's own children or text content, ReactAnima
 
 
 
-## Local Development
+## View examples
 
 ```bash
 npm install
 npm run build # or use npm run build:watch
+npm run start:examples
+```
+
+## Local development
+
+```bash
+npm install
+npm run build:watch
 npm run start:examples
 ```
 
