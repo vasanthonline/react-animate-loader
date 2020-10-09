@@ -19,3 +19,27 @@
 .form__group .form__row {
   margin: 1rem;
 }
+
+.block__tile__border {
+  background-color: #fff;
+  border: 2rem solid #e2e2e2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+div.block__tile {
+  min-width: 15rem;
+  min-height: 15rem;
+}
+
+.block__tile__header, .block__tile__subheader {
+  min-width: 20rem;
+}
+
+.block__tile__text {
+  min-width: 10rem;
+  max-width: 15rem;
+}
