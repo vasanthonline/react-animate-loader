@@ -15,7 +15,7 @@ export default function ReactAnimateLoader(props:ReactAnimateLoaderProps) {
         return item
 
       const className = `${item.props.className || ''} react___block__loader`
-      const styles = props.style || {}
+      const styles = Object.assign({}, item.props?.style || {}, props.style || {})
       const itemProps = Object.assign({}, { ...item.props}, {className: className}, {style: styles})
 
       return React.cloneElement(item, itemProps)

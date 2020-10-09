@@ -50,3 +50,23 @@ test('do not render react loader if children elements are presnt', () => {
   expect(container.firstChild).not.toHaveClass('react___block__loader')
   expect(container.firstChild.firstChild).toHaveTextContent('This is a test element. React loader will not load if this element is present as a child')
 });
+
+
+test('renders react loader with custom style set on the element', () => {
+  const { container } = render(
+    <ReactAnimateLoader>
+      <div style={{backgroundColor: '#000', minHeight: '100px'}}></div>
+    </ReactAnimateLoader>
+  );
+  expect(container.firstChild).toHaveStyle(`background-color: #000`)
+  expect(container.firstChild).toHaveStyle(`min-height: 100px`)
+});
+
+test('renders react loader without removing custom attributes set on the element', () => {
+  const { container } = render(
+    <ReactAnimateLoader>
+      <div data-testid={'test'}></div>
+    </ReactAnimateLoader>
+  );
+  expect(container.firstChild).toHaveAttribute('data-testid', 'test')
+});
