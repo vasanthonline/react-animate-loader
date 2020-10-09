@@ -1,6 +1,6 @@
 {
   "name": "@vasanthgopal/react-animate-loader",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "An animated sleek loader for react components",
   "keywords": [
     "loader",
