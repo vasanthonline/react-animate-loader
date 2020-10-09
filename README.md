@@ -1,4 +1,4 @@
-# react-loader
+# react-animate-loader
 A animated sleek loader for react components
 
 [![GitHub license](https://img.shields.io/github/license/vasanthonline/battleship?logo=MIT)](https://github.com/vasanthonline/react-loader/blob/main/LICENSE)
