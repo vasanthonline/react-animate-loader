@@ -9,40 +9,44 @@ A animated sleek loader for any HTML element / React component.
 ## Install
 
 ```bash
-yarn add react-loader
+yarn add react-animate-loader
 
 # or
 
-npm i react-loader
+npm i react-animate-loader
 ```
 
 ## Usage
 
 ```javascript
 import React from 'react';
-import ReactLoader from 'react-loader';
+import ReactAnimateLoader from 'react-animate-loader';
 
 
 
 function App() {
   return (
-    <ReactLoader>
+    <ReactAnimateLoader>
       <div></div>
-    </ReactLoader>
+    </ReactAnimateLoader>
   );
 }
 ```
 
-## Criteria for ReactLoader
+## How ReactAnimateLoader works?
 
-ReactLoader applies loading animation to each of its immediate children. 
-In case the immediate children has it's own children or text content, ReactLoader does not get applied. The element should be empty for ReactLoader to kick-in.
+
+
+## Criteria for ReactAnimateLoader
+
+ReactAnimateLoader applies loading animation to each of its immediate children. 
+In case the immediate children has it's own children or text content, ReactAnimateLoader does not get applied. The element should be empty for ReactAnimateLoader to kick-in.
 
 ## Props
 
 | Prop                      | Type            | Required             |  Default                        | Description                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ------------------------- | --------------- | --------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| style                     | `React.CSSProperties`        | Optional         |   `{minHeight:1.5rem,backgroundColor:#e2e2e2}`                           | Custom CSS styling for children of ReactLoader component.                                                                                                                                                                                                                                                                                                                                                                                       |
+| style                     | `React.CSSProperties`        | Optional         |   `{minHeight:1.5rem,backgroundColor:#e2e2e2}`                           | Custom CSS styling for children of ReactAnimateLoader component.                                                                                                                                                                                                                                                                                                                                                                                       |
 
 
 
