@@ -1,1 +1,1 @@
-export { default } from './ReactLoader.js'
+export { default } from './ReactLoader'

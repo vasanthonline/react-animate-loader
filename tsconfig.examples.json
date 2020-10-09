@@ -6,7 +6,6 @@
     "moduleResolution": "node",
     "noImplicitAny": true,
     "target": "es5",
-    "declaration": true,
     "downlevelIteration": true,
     "esModuleInterop": true,
     "lib": ["es2017", "dom"],
@@ -14,6 +13,6 @@
       "node"
     ]
   },
-  "include": ["./src/*"],
-  "exclude": ["node_modules"],
+  "include": ["./examples/*"],
+  "exclude": ["node_modules"]
 }
