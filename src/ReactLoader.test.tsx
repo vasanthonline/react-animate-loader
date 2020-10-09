@@ -29,3 +29,24 @@ test('renders react loader with custom styles set', () => {
   expect(container.firstChild).toHaveStyle(`background-color: #000`)
   expect(container.firstChild).toHaveStyle(`min-height: 100px`)
 });
+
+test('do not render react loader if text content is present', () => {
+  const { container } = render(
+    <ReactLoader>
+      <h4>This is a test content. React loader will not load if this text is present</h4>
+    </ReactLoader>
+  );
+  expect(container.firstChild).not.toHaveClass('block__loader')
+});
+
+test('do not render react loader if children elements are presnt', () => {
+  const { container } = render(
+    <ReactLoader>
+      <div>
+        <p>This is a test element. React loader will not load if this element is present as a child</p>
+      </div>
+    </ReactLoader>
+  );
+  expect(container.firstChild).not.toHaveClass('block__loader')
+  expect(container.firstChild.firstChild).toHaveTextContent('This is a test element. React loader will not load if this element is present as a child')
+});
