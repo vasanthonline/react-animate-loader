@@ -10,7 +10,7 @@ type ReactLoaderProps = {
 export default function ReactLoader(props:ReactLoaderProps) {
   
   return (<>
-    {React.Children.map(props.children, item => {
+    {React.Children.map(props.children, (item: React.ReactElement) => {
       if(item.props.children)
         return item
 

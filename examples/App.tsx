@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import ReactLoader from './../src/index'
+import ReactLoader from './../lib/index'
 
 type formData = {
   label?:  string,
