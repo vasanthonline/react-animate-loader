@@ -1,0 +1,8 @@
+# Ignore all dev folders & files
+src/
+__mocks__/
+examples/
+*.config.js
+tsconfig.json
+tsconfig.examples.json
+.github/
