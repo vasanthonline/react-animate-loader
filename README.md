@@ -9,18 +9,18 @@ A animated sleek loader for any HTML element / React component.
 ## Install
 
 ```bash
-yarn add react-animate-loader
+yarn add @vasanthgopal/react-animate-loader
 
 # or
 
-npm i react-animate-loader
+npm i @vasanthgopal/react-animate-loader
 ```
 
 ## Usage
 
 ```javascript
 import React from 'react';
-import ReactAnimateLoader from 'react-animate-loader';
+import ReactAnimateLoader from '@vasanthgopal/react-animate-loader';
 
 
 
