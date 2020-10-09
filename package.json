@@ -23,7 +23,8 @@
     "build:examples": "webpack --progress --colors --config webpack-examples.config.js",
     "start:examples": "webpack-dev-server --open --hot --inline --config webpack-examples.config.js",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
