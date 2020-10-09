@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'lib'),
     filename: 'index.js',
-    library: 'ReactLoader',
+    library: 'ReactAnimateLoader',
     libraryTarget: 'umd'
   },
   module: {

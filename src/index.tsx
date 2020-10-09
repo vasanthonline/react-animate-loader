@@ -1,1 +1,1 @@
-export { default } from './ReactLoader'
+export { default } from './ReactAnimateLoader'

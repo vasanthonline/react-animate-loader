@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import ReactLoader from './../lib/index'
+import ReactAnimateLoader from './../lib/index'
 
 type formData = {
   label?:  string,
@@ -39,7 +39,7 @@ function App() {
 
   function getBlockElement(){
     const el = (<div className="block__elem">{data.block}</div>)
-    return (data.block ? el : <ReactLoader>{el}</ReactLoader>)
+    return (data.block ? el : <ReactAnimateLoader>{el}</ReactAnimateLoader>)
   }
 
   function getFormElement(){
@@ -52,7 +52,7 @@ function App() {
                     <button type="submit">Submit</button>
                   </div>
                 </form>)
-    return (data.form?.label ? el : <ReactLoader style={{minHeight: '10rem', backgroundColor: '#9fbdd2'}}><form className="form__group"></form></ReactLoader>)
+    return (data.form?.label ? el : <ReactAnimateLoader style={{minHeight: '10rem', backgroundColor: '#9fbdd2'}}><form className="form__group"></form></ReactAnimateLoader>)
   }
 
   function getTileElement(){
@@ -67,7 +67,7 @@ function App() {
                   <h4 className="block__tile__subheader">{data.tile?.subtitle}</h4>
                   <p className="block__tile__text">{data.tile?.description}</p>
                 </>)
-    return (data.tile?.title ? el : <ReactLoader>{el.props.children}</ReactLoader>)
+    return (data.tile?.title ? el : <ReactAnimateLoader>{el.props.children}</ReactAnimateLoader>)
   }
 
   return (<>

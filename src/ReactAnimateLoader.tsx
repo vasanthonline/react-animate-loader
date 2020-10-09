@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './ReactLoader.css'
+import './ReactAnimateLoader.css'
 
-type ReactLoaderProps = {
+type ReactAnimateLoaderProps = {
   children?: React.ReactElement | Array<React.ReactElement>
   style?: React.CSSProperties
 }
 
-export default function ReactLoader(props:ReactLoaderProps) {
+export default function ReactAnimateLoader(props:ReactAnimateLoaderProps) {
   
   return (<>
     {React.Children.map(props.children, (item: React.ReactElement) => {
