@@ -34,7 +34,14 @@ function App() {
 ```
 
 ## How ReactAnimateLoader works?
-
+1. `ReactAnimateLoader` is applied as a wrapper to any HTML / React element. It could a single element or a set of elements.
+2. `ReactAnimateLoader` will loop through each if its children and check whether it's empty.
+3. If the child element is not empty, the element is rendered as it is. No loader is added.
+4. If the child element is empty, it will create an loader animation on the component as a `:after` pseudo element.
+5. The `:after` pseudo element has a white gradient background. The element moves from left to right of the parent element for a default time period of 1.2 seconds. The movement is repeated for an infinitely, generating a nice loading experience.
+6. The loader can be stopped by removing the `ReactAnimateLoader` wrapper to the HTML / React element.
+7. Additional customizations in terms of element background color, minimum height etc can be set via the `style` props of `ReactAnimateLoader` element.
+8. Additioncal customizations on animation color, animation duration etc can be set via CSS styling for the selector `.react___block__loader:empty:after`.
 
 
 ## Criteria for ReactAnimateLoader
