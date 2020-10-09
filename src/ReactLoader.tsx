@@ -14,7 +14,7 @@ export default function ReactLoader(props:ReactLoaderProps) {
       if(item.props.children)
         return item
 
-      const className = `${item.props.className || ''} block__loader`
+      const className = `${item.props.className || ''} react___block__loader`
       const styles = props.style || {}
       const itemProps = Object.assign({}, { ...item.props}, {className: className}, {style: styles})
 

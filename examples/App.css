@@ -30,7 +30,7 @@
   align-items: flex-start;
 }
 
-div.block__tile {
+div.block__tile:empty {
   min-width: 15rem;
   min-height: 15rem;
 }
