@@ -1,7 +1,7 @@
 # react-animate-loader
 A animated sleek loader for react components
 
-[![GitHub license](https://img.shields.io/github/license/vasanthonline/battleship?logo=MIT)](https://github.com/vasanthonline/react-loader/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/vasanthonline/react-animate-loader)](https://github.com/vasanthonline/react-loader/blob/main/LICENSE)
 
 A animated sleek loader for any HTML element / React component.
 
@@ -9,18 +9,18 @@ A animated sleek loader for any HTML element / React component.
 ## Install
 
 ```bash
-yarn add @vasanthgopal/react-animate-loader
+yarn add react-animate-loader
 
 # or
 
-npm i @vasanthgopal/react-animate-loader
+npm i react-animate-loader
 ```
 
 ## Usage
 
 ```javascript
 import React from 'react';
-import ReactAnimateLoader from '@vasanthgopal/react-animate-loader';
+import ReactAnimateLoader from 'react-animate-loader';
 
 
 
